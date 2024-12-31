@@ -1,0 +1,517 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+img {
+    width: 100%;
+    display: block;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+.btn-1 {
+    background-color: #ffc51a;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 17px;
+    border-bottom: 4px solid #955228;
+    margin: 20px 0;
+    color: #fff;
+    transition: 0.5s;
+}
+.btn-1:hover {
+    background-color: #955228;
+}
+.header .top {
+    background-color: #bf4619;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+.header .top p {
+    font-size: 17px;
+}
+.header .bot {
+    background-color: #ffc51a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 60px;
+}
+.header .bot .menu a {
+    color: #fff;
+    margin-left: 20px;
+    font-size: 18px;
+    transition: 1s;
+}
+.header .bot .menu li {
+    padding-right: 30px;
+    list-style: none;
+    display: inline-block;
+}
+.header .bot .menu li:hover a {
+    color: #8d522c;
+}
+.header .bot .icon i {
+    margin-left: 20px;
+    font-size: 18px;
+    color: #fff;
+    transition: 1s;
+}
+.header .bot .icon i:hover {
+    color: #8d522c;
+}
+.slide .pic {
+    position: relative;
+}
+.slide .pic .content {
+    position: absolute;
+    top: 40%;
+    right: 10%;
+    transform: translateY(-50%);
+    text-align: center;
+    width: 30%;
+}
+.slide .pic .content h3 {
+    font-family: "Pacifico", cursive;
+    font-size: 50px;
+    color: #fff;
+}
+.slide .pic .content p {
+    color: #c7f3f6;
+    font-size: 40px;
+    margin-top: 30px;
+}
+.slide .pic .content a {
+    background-color: #fff;
+    padding: 10px 30px;
+    border-radius: 50px;
+    display: inline-block;
+    margin-top: 30px;
+    font-size: 18px;
+    border-bottom: 5px solid #000;
+    transition: 1s;
+}
+.slide .pic .content a:hover {
+    background-color: #000;
+    color: #fff;
+    border-bottom: 5px solid #fff;
+}
+.slide .pic .content a:hover i {
+    color: #fff;
+}
+.slide .pic .content a i {
+    margin-left: 10px;
+    transition: 1s;
+}
+.pet .title {
+    text-align: center;
+    margin: 80px 0 50px;
+}
+.pet .title p {
+    font-size: 15px;
+}
+.pet .title h2 {
+    font-family: "Pacifico", cursive;
+    font-size: 40px;
+    color: #8d522c;
+}
+.pet .picpet {
+    display: flex;
+    padding: 0 50px;
+    gap: 25px;
+}
+.pet .picpet .detailpet {
+    width: 20%;
+    text-align: center;
+}
+.pet .picpet .detailpet img {
+    border-radius: 30px;
+    transition: 1s;
+}
+.pet .picpet .detailpet img:hover {
+    transform: scale(1.2);
+}
+.pet .picpet .detailpet .thumb {
+    overflow: hidden;
+    border-radius: 30px;
+}
+.pet .picpet .detailpet h3 {
+    color: #fff;
+    background-color: var(--color);
+    display: inline-block;
+    border-radius: 30px;
+    padding: 5px 30px;
+    transform: translateY(-15px);
+    transition: 1s;
+    font-weight: 400;
+}
+.pet .picpet .detailpet h3:hover {
+    background-color: #955228;
+}
+.picture {
+    display: flex;
+}
+.picture .left {
+    width: 50%;
+    margin-top: 90px;
+}
+.picture .right {
+    width: 50%;
+    margin-top: 90px;
+}
+.picture .pic {
+    position: relative;
+}
+.picture .introducepic {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border-radius: 20px;
+    text-align: right;
+    padding: 20px 30px;
+    width: 90%;
+    margin: 4px 35px;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: 0.5s;
+}
+.picture .pic:hover .introducepic {
+    opacity: 1;
+}
+.picture .introducepic h3 {
+    font-family: "Pacifico", cursive;
+    font-size: 40px;
+}
+.picture .introducepic p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+.food .header {
+    text-align: center;
+    margin: 80px 0 20px;
+}
+.food .header p {
+    font-size: 18px;
+}
+.food .header h3 {
+    font-family: "Pacifico", cursive;
+    color: #ffc51a;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.food .footer .picfood {
+    display: flex;
+}
+.food .footer img {
+    width: 33%;
+    padding: 20px;
+}
+.food .footer .icon {
+    border-radius: 50px;
+    display: block;
+    text-align: center;
+}
+.caringpet {
+    display: flex;
+    margin-top: 7%;
+}
+.caringpet .pictu {
+    position: relative;
+}
+.caringpet .pictu .infor {
+    position: absolute;
+    top: 5%;
+    right: 0;
+    width: 50%;
+}
+.caringpet .pictu .infor h3 {
+    font-family: "Pacifico", cursive;
+    color: #000;
+    font-size: 40px;
+}
+.caringpet .pictu .infor h5 {
+    font-family: "Pacifico", cursive;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.caringpet .pictu .infor p {
+    font-size: 18px;
+}
+.caringpet .pictu .infor .picsmall {
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+}
+.caringpet .pictu .infor .picsmall .picture1 {
+    display: flex;
+    border-radius: 50px;
+    margin-top: 30px;
+    width: 50%;
+}
+.caringpet .pictu .infor .picsmall .picture1 img {
+    border-radius: 50px;
+    width: 20%;
+}
+.caringpet .pictu .infor .picsmall .picture1 p {
+    font-family: "Pacifico", cursive;
+    margin-left: 5px;
+    text-indent: center;
+}
+.puppydog {
+    background-color: #fff;
+    display: flex;
+    padding-bottom: 80px;
+}
+.puppydog .left {
+    width: 50%;
+}
+.puppydog .right {
+    width: 50%;
+    padding: 50px 98px 50px;
+    background-color: #fff;
+}
+.puppydog .right h3 {
+    font-family: "Pacifico", cursive;
+    color: #8d522c;
+    font-size: 45px;
+}
+.puppydog .right a {
+    display: inline-flex;
+    font-size: 16px;
+    margin-right: 20px;
+    margin: 10px 0;
+    text-indent: 10px;
+}
+.puppydog .right a i {
+    margin-right: 10px;
+    color: #fcd04a;
+    margin: 3px 0;
+}
+.puppydog .right p {
+    font-size: 18px;
+}
+.puppydog .right button {
+    border-radius: 30px;
+    padding: 10px 25px;
+    font-size: 16px;
+    margin-top: 20px;
+    background-color: #ffc51a;
+    border: none;
+    border-bottom: 4px solid #955228;
+    color: #fff;
+    transition: 1s;
+}
+.puppydog .right button:hover {
+    background-color: #955228;
+}
+.petcare {
+    display: flex;
+    padding-bottom: 80px;
+}
+.petcare .left {
+    width: 40%;
+    text-align: center;
+    padding: 0 50px;
+}
+.petcare .left h3 {
+    font-family: "Pacifico", cursive;
+    color: #955228;
+    font-size: 40px;
+}
+.petcare .left h5 {
+    font-family: "Pacifico", cursive;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.petcare .left p {
+    font-size: 17px;
+    margin-top: 20px;
+}
+
+.petcare .right {
+    display: flex;
+    width: 60%;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.petcare .right img {
+    width: 46%;
+    border-radius: 40px;
+    overflow: hidden;
+    transition: 1s;
+}
+.petcare .right img:hover {
+    transform: scale(1.1);
+}
+.thusspoke {
+    background-image: linear-gradient(rgb(141 82 44 / 40%), rgb(141 82 44 / 40%)), url(img/banner-1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0;
+    position: relative;
+}
+/* .thusspoke::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(141 82 44 / 40%);
+    width: 100%;
+    height: 100%;
+} */
+.thusspoke .text {
+    text-align: center;
+    /* position: relative;
+    z-index: 1; */
+}
+.thusspoke .text h3 {
+    font-family: "Pacifico", cursive;
+    font-size: 40px;
+    margin-bottom: 70px;
+}
+.thusspoke .text p {
+    padding: 3x 80px;
+    font-size: 18px;
+}
+.thusspoke .text h5 {
+    font-size: 18px;
+    margin-top: 30px;
+}
+.thusspoke .text h5 span {
+    font-family: "Pacifico", cursive;
+    margin-right: 15px;
+}
+.fourlogo {
+    width: 80%;
+    margin: 50px auto;
+}
+.fourlogo .imglogo {
+    display: flex;
+}
+.fourlogo .imgcol {
+    width: 25%;
+}
+.foo .top {
+    text-align: center;
+}
+.foo .top p {
+    font-size: 15px;
+}
+.foo .top h3 {
+    font-family: "Pacifico", cursive;
+    font-size: 40px;
+    color: #955228;
+    margin: 10px 0 30px;
+}
+.foo .top input {
+    display: block;
+    padding: 18px;
+    border: 1px solid black;
+    border-radius: 40px;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.foo .top button {
+    border-radius: 40px;
+    padding: 10px 30px;
+    border: none;
+    font-size: 18px;
+    background-color: #ffc51a;
+    color: #fff;
+    border-bottom: 4px solid #955228;
+    transition: 0.5s;
+}
+.foo .top button:hover {
+    background-color: #955228;
+}
+.foo .bot {
+    display: flex;
+    width: 90%;
+    margin: 90px;
+}
+.foo .bot .col {
+    width: 25%;
+    display: flex;
+    padding: 0 40px;
+    border-right: 1px solid rgb(224, 224, 224);
+}
+.foo .bot .col:last-child {
+    border-right: none;
+}
+.foo .bot .col i {
+    font-size: 30px;
+    margin-top: 16px;
+}
+.foo .bot .col .text {
+    margin-left: 10px;
+}
+.foo .bot .col h4 {
+    font-family: "Pacifico", cursive;
+    font-size: 20px;
+    color: #955228;
+}
+.foo .bot .col p {
+    font: 20px;
+}
+.footer .top {
+    background-color: #bf4619;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-bottom: 8px solid #842e0f;
+}
+.footer .top .text {
+    padding-left: 32%;
+}
+.footer .top img {
+    width: 11%;
+    margin-left: 20%;
+}
+.footer .top ul {
+    display: flex;
+}
+.footer .top ul li {
+    list-style: none;
+    padding-right: 18px;
+    padding-top: 35px;
+    color: #fff;
+    font-size: 17px;
+}
+.footer .bot {
+    display: flex;
+    background-color: #ffc51a;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 32%;
+}
+.footer .bot p {
+    font-size: 15px;
+    color: #fff;
+    margin-top: 10px;
+}
+.footer .bot button {
+    background-color: #bf4619;
+    color: #fff;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 40px;
+    font-size: 17px;
+    margin-left: 13px;
+    border-bottom: 4px solid #973916;
+    transition: 0.5s;
+}
+.footer .bot button:hover {
+    background-color: #fff;
+    color: #973916;
+}
